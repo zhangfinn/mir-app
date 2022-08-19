@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="index">主应用</div>
+    <pango-app
+      entry="http://10.57.241.131:3000/index.html"
+      name="app1"
+    ></pango-app>
+  </body>
+  <script>
+    function statechange(status) {
+      console.log(11, status);
+    }
+  </script>
+  <script type="module" src="../packages/index.js"></script>
+</html>
